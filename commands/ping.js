@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (client, msg, args) => {
-  msg.channel.send(client.ping + "ms :ping_pong:")
+  const ping = Math.round(client.ping);
+  msg.channel.send(ping + "ms :ping_pong:")
   }
 
 module.exports.help = {
